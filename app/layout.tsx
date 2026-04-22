@@ -31,6 +31,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/logo.png',
+    shortcut: '/logo.png',
+    apple: '/logo.png',
+  },
   openGraph: {
     title: 'High-Converting AI Web Design for Coaches & Consultants',
     description: 'Transform your coaching business with premium, AI-powered web design. Built for conversions and high-speed performance.',

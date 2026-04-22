@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { ArrowUpRight, Menu, X } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "motion/react";
 
 export function Navbar() {
@@ -14,8 +15,14 @@ export function Navbar() {
   return (
     <nav className="fixed top-12 left-4 right-4 z-50 px-4 md:px-8 lg:px-16 py-3 flex items-center justify-between pointer-events-none">
       <div className="flex items-center pointer-events-auto">
-        <Link href="/" className="h-10 w-10 md:h-12 md:w-12 rounded-full bg-white/20 flex items-center justify-center liquid-glass backdrop-blur-md">
-          <span className="font-heading italic text-lg md:text-xl font-bold">St.</span>
+        <Link href="/" className="h-10 w-10 md:h-12 md:w-12 rounded-full overflow-hidden flex items-center justify-center liquid-glass backdrop-blur-md border border-white/10">
+          <Image 
+            src="/logo.png" 
+            alt="Luxury AI Studio Logo" 
+            width={48} 
+            height={48}
+            className="w-full h-full object-cover"
+          />
         </Link>
       </div>
 

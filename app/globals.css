@@ -79,3 +79,26 @@
     pointer-events: none;
   }
 }
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(to bottom, #1a1a1a, #daa520, #1a1a1a);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(to bottom, #333, #ffdf00, #333);
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #daa520 #000;
+}

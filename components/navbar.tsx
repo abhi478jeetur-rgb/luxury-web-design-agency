@@ -15,13 +15,13 @@ export function Navbar() {
   return (
     <nav className="fixed top-12 left-4 right-4 z-50 px-4 md:px-8 lg:px-16 py-3 flex items-center justify-between pointer-events-none">
       <div className="flex items-center pointer-events-auto">
-        <Link href="/" className="h-10 w-10 md:h-12 md:w-12 rounded-full overflow-hidden flex items-center justify-center liquid-glass backdrop-blur-md border border-white/10">
+        <Link href="/" className="h-10 w-10 md:h-12 md:w-12 rounded-full overflow-hidden flex items-center justify-center liquid-glass backdrop-blur-md border border-white/10 hover:scale-110 transition-all duration-300 active:scale-95 group">
           <Image 
             src="/logo.png" 
             alt="Luxury AI Studio Logo" 
             width={48} 
             height={48}
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover transition-transform duration-500 group-hover:rotate-6"
             priority
           />
         </Link>

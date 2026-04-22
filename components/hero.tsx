@@ -15,7 +15,7 @@ export function Hero() {
         poster="https://picsum.photos/seed/hero/1920/1080?blur=4"
         className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 lg:opacity-100 lg:object-contain top-0 lg:top-[20%]"
       >
-        <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4" type="video/mp4" />
+        <source src="https://ik.imagekit.io/a57jpcchpv/hubber%20web/lagzari-hero-1stvideo-5c.mp4" type="video/mp4" />
       </video>
 
       <div className="absolute inset-0 bg-black/5 z-0" />

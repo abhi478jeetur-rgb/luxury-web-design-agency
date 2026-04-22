@@ -48,7 +48,7 @@ export function CtaFooter() {
       <div className="relative z-10 w-full w-full px-6 lg:px-16 mt-32">
         <div className="max-w-7xl mx-auto pt-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-white/40 text-xs font-body">
-            &copy; 2026 Luxury AI Web Design Studio. All rights reserved. <span className="mx-2">|</span> We never sell your data.
+            &copy; 2026 Luxury AI Studio by NewAIHubber. All rights reserved. <span className="mx-2">|</span> We never sell your data.
           </p>
           <div className="flex items-center gap-6">
             {[

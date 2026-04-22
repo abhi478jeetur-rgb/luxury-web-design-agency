@@ -52,7 +52,7 @@ export function AboutSection() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />
               <div className="absolute bottom-8 left-8 right-8">
                 <div className="liquid-glass p-6 rounded-2xl border border-white/10 backdrop-blur-md">
-                  <h4 className="text-white font-heading italic text-xl mb-2">The Studio</h4>
+                  <h3 className="text-white font-heading italic text-xl mb-2">The Studio</h3>
                   <p className="text-white/60 text-sm font-body">
                     Located at the intersection of luxury and technology. We build the future.
                   </p>

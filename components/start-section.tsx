@@ -28,7 +28,11 @@ export function StartSection() {
         <p className="text-white/60 font-body font-light text-sm md:text-base max-w-2xl mx-auto mb-10">
           Share your vision. Our AI handles the rest&mdash;wireframes, design, code, launch. All in days, not quarters.
         </p>
-        <button className="liquid-glass-strong rounded-full px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors">
+        <button 
+          type="button"
+          aria-label="Get started with our AI web design service"
+          className="liquid-glass-strong rounded-full px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors"
+        >
           Get Started
         </button>
       </div>

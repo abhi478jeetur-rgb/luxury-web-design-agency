@@ -22,6 +22,7 @@ export function Navbar() {
             width={48} 
             height={48}
             className="w-full h-full object-cover"
+            priority
           />
         </Link>
       </div>
@@ -36,7 +37,11 @@ export function Navbar() {
             {link}
           </Link>
         ))}
-        <button className="flex items-center gap-1 bg-white text-black rounded-full px-4 py-2 text-sm font-medium ml-2 hover:bg-neutral-200 transition-colors">
+        <button 
+          type="button"
+          aria-label="Get started with our luxury AI web design"
+          className="flex items-center gap-1 bg-white text-black rounded-full px-4 py-2 text-sm font-medium ml-2 hover:bg-neutral-200 transition-colors"
+        >
           Get Started
           <ArrowUpRight className="w-4 h-4" />
         </button>
@@ -44,7 +49,9 @@ export function Navbar() {
 
       <div className="md:hidden flex items-center pointer-events-auto">
         <button 
+          type="button"
           onClick={toggleMenu}
+          aria-label={isOpen ? "Close menu" : "Open menu"}
           className="liquid-glass rounded-full p-2 text-white flex items-center justify-center"
         >
           {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
@@ -71,7 +78,11 @@ export function Navbar() {
                 </Link>
               ))}
               <hr className="border-white/10 my-2" />
-              <button className="flex items-center justify-center gap-2 bg-white text-black rounded-full py-4 text-base font-semibold hover:bg-neutral-200 transition-colors">
+              <button 
+                type="button"
+                aria-label="Get started with our luxury AI web design"
+                className="flex items-center justify-center gap-2 bg-white text-black rounded-full py-4 text-base font-semibold hover:bg-neutral-200 transition-colors"
+              >
                 Get Started
                 <ArrowUpRight className="w-5 h-5" />
               </button>

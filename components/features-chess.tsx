@@ -1,4 +1,4 @@
-"use client";
+import Image from "next/image";
 
 export function FeaturesChess() {
   return (
@@ -23,16 +23,22 @@ export function FeaturesChess() {
               <p className="text-white/70 font-body font-light text-sm md:text-base leading-relaxed mb-8">
                 Every pixel is intentional. Our AI studies what works across thousands of top sites&mdash;then builds yours to outperform them all.
               </p>
-              <button className="liquid-glass-strong rounded-full px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors">
+              <button 
+                type="button"
+                aria-label="Learn more about AI performance optimization"
+                className="liquid-glass-strong rounded-full px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors"
+              >
                 Learn more
               </button>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="liquid-glass rounded-2xl overflow-hidden p-2">
-                <img 
+              <div className="liquid-glass rounded-2xl overflow-hidden p-2 relative aspect-video">
+                <Image 
                   src="https://motionsites.ai/assets/hero-finlytic-preview-CV9g0FHP.gif" 
-                  className="w-full h-auto rounded-xl object-cover" 
+                  className="rounded-xl object-cover" 
                   alt="Feature analytics preview" 
+                  fill
+                  unoptimized
                 />
               </div>
             </div>
@@ -47,16 +53,22 @@ export function FeaturesChess() {
               <p className="text-white/70 font-body font-light text-sm md:text-base leading-relaxed mb-8">
                 Your site evolves on its own. AI monitors every click, scroll, and conversion&mdash;then optimizes in real time. No manual updates. Ever.
               </p>
-              <button className="liquid-glass-strong rounded-full px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors">
+              <button 
+                type="button"
+                aria-label="Learn how automatic AI optimization works"
+                className="liquid-glass-strong rounded-full px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors"
+              >
                 See how it works
               </button>
             </div>
             <div className="w-full lg:w-1/2">
-              <div className="liquid-glass rounded-2xl overflow-hidden p-2">
-                <img 
+              <div className="liquid-glass rounded-2xl overflow-hidden p-2 relative aspect-video">
+                <Image 
                   src="https://motionsites.ai/assets/hero-wealth-preview-B70idl_u.gif" 
-                  className="w-full h-auto rounded-xl object-cover" 
+                  className="rounded-xl object-cover" 
                   alt="Feature optimization preview" 
+                  fill
+                  unoptimized
                 />
               </div>
             </div>

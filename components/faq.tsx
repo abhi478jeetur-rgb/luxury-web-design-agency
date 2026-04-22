@@ -76,7 +76,9 @@ export function FAQ() {
                 className="border border-white/10 rounded-2xl overflow-hidden bg-white/[0.02] backdrop-blur-sm"
               >
                 <button
+                  type="button"
                   onClick={() => setOpenIndex(openIndex === index ? null : index)}
+                  aria-expanded={openIndex === index}
                   className="w-full px-6 py-6 text-left flex items-center justify-between hover:bg-white/[0.03] transition-colors"
                 >
                   <h3 className="text-lg md:text-xl font-medium text-white pr-8">

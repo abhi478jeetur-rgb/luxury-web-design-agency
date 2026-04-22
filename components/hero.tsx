@@ -13,8 +13,7 @@ export function Hero() {
         muted
         playsInline
         poster="https://picsum.photos/seed/hero/1920/1080?blur=4"
-        className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 lg:opacity-100 lg:object-contain lg:h-auto"
-        style={{ top: "0%", lg: { top: "20%" } } as any}
+        className="absolute inset-0 w-full h-full object-cover z-0 opacity-40 lg:opacity-100 lg:object-contain top-0 lg:top-[20%]"
       >
         <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260307_083826_e938b29f-a43a-41ec-a153-3d4730578ab8.mp4" type="video/mp4" />
       </video>
@@ -73,11 +72,19 @@ export function Hero() {
           transition={{ delay: 1.1, duration: 0.6 }}
           className="flex flex-col sm:flex-row items-center gap-4"
         >
-          <button className="liquid-glass-strong rounded-full px-6 py-3 flex items-center justify-center gap-2 text-white font-medium hover:bg-white/20 transition-all text-sm w-full sm:w-auto hover:scale-105 active:scale-95 shadow-xl shadow-white/5">
+          <button 
+            type="button"
+            aria-label="Book your free AI web design strategy call"
+            className="liquid-glass-strong rounded-full px-6 py-3 flex items-center justify-center gap-2 text-white font-medium hover:bg-white/20 transition-all text-sm w-full sm:w-auto hover:scale-105 active:scale-95 shadow-xl shadow-white/5"
+          >
             Book your free AI web design strategy call today
             <ArrowUpRight className="w-4 h-4" />
           </button>
-          <button className="flex items-center gap-2 text-white font-medium px-5 py-2.5 hover:text-white/80 transition-colors">
+          <button 
+            type="button"
+            aria-label="Watch the brand film"
+            className="flex items-center gap-2 text-white font-medium px-5 py-2.5 hover:text-white/80 transition-colors"
+          >
             <Play className="w-4 h-4 fill-white" />
             Watch the Film
           </button>

@@ -28,10 +28,18 @@ export function CtaFooter() {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
-          <button className="liquid-glass-strong rounded-full px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors w-full sm:w-auto text-sm">
+          <button 
+            type="button"
+            aria-label="Book your free AI strategy call"
+            className="liquid-glass-strong rounded-full px-6 py-3 font-medium text-white hover:bg-white/10 transition-colors w-full sm:w-auto text-sm"
+          >
             Book AI Strategy Call
           </button>
-          <button className="bg-white text-black rounded-full px-6 py-3 font-medium hover:bg-neutral-200 transition-colors w-full sm:w-auto text-sm">
+          <button 
+            type="button"
+            aria-label="View our pricing plans"
+            className="bg-white text-black rounded-full px-6 py-3 font-medium hover:bg-neutral-200 transition-colors w-full sm:w-auto text-sm"
+          >
             View Pricing
           </button>
         </div>

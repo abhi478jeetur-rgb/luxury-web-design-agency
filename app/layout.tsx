@@ -27,9 +27,12 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://www.newaihubber.com/'),
+  metadataBase: new URL('https://luxury-web-design-agency.vercel.app/'),
   alternates: {
     canonical: '/',
+  },
+  verification: {
+    google: 'Aaxz4xTPWoFt24o2r_M9wsh6B60M0bCZUXbhAuxlbgU',
   },
   icons: {
     icon: '/logo.png',
@@ -39,7 +42,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'High-Converting AI Web Design for Coaches & Consultants',
     description: 'Transform your coaching business with premium, AI-powered web design. Built for conversions and high-speed performance.',
-    url: 'https://www.newaihubber.com/',
+    url: 'https://luxury-web-design-agency.vercel.app/',
     siteName: 'Luxury AI Studio by NewAIHubber',
     images: [
       {
@@ -83,8 +86,8 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Luxury AI Studio by NewAIHubber",
-              "url": "https://www.newaihubber.com/",
-              "logo": "https://www.newaihubber.com/logo.png",
+              "url": "https://luxury-web-design-agency.vercel.app/",
+              "logo": "https://luxury-web-design-agency.vercel.app/logo.png",
               "sameAs": [
                 "https://www.newaihubber.com/"
               ],

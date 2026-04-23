@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://luxury-web-design-agency.vercel.app/sitemap.xml
